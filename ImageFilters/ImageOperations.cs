@@ -151,32 +151,6 @@ namespace ImageFilters
             return ret;
         }
 
-        //public static byte[] counting_sort(byte[] arr)
-        //{
-
-        //    byte[] count = new byte[arr.Length];
-        //    byte[] sorted_array = new byte[arr.Length];
-        //    for (int i = 0; i < arr.Length - 1; ++i)
-        //    {
-        //        for (int j = i + 1; j < arr.Length; ++j)
-        //        {
-        //            if (arr[i] < arr[j])
-        //            {
-        //                count[j]++;
-        //            }
-        //            else
-        //            {
-        //                count[i]++;
-        //            }
-        //        }
-        //    }
-        //    for (int i = 0; i < arr.Length; ++i)
-        //    {
-        //        sorted_array[count[i]] = arr[i];
-        //    }
-        //    return sorted_array;
-        //}
-
         public static byte[] countsort(byte[] arr, int sz)       // O(n+k) == O(n + 256) == O(n)    n = size of array
         {
             sz *= sz;
